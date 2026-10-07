@@ -744,6 +744,9 @@ html.ready #sealLoad{opacity:0;pointer-events:none}
   .hero-names{font-size:clamp(50px,13.6vw,64px)!important}
   .hero-scroll{bottom:12px!important}
 }
+
+/* after the seal opens, nothing inside it may catch taps */
+#seal-screen.opening,#seal-screen.opening *{pointer-events:none!important}
 </style>
 </head>
 <body>
