@@ -734,6 +734,16 @@ html.ready #seal-screen .seal-wrap{opacity:1;pointer-events:auto}
 #sealLoad i{display:block;width:34px;height:34px;margin:0 auto 18px;border:2px solid rgba(220,200,143,.25);border-top-color:#dcc88f;border-radius:50%;animation:sealSpin 1s linear infinite}
 @keyframes sealSpin{to{transform:rotate(360deg)}}
 html.ready #sealLoad{opacity:0;pointer-events:none}
+
+/* phones: never let the hero get so short that the text lands on the faces */
+@media (max-width:700px){
+  .hero{height:100vh;height:100svh;min-height:620px}
+  .hero-content{padding-bottom:40px!important}
+  .hf-top{margin-bottom:12px!important}
+  .hf-bot{margin-top:14px!important}
+  .hero-names{font-size:clamp(50px,13.6vw,64px)!important}
+  .hero-scroll{bottom:12px!important}
+}
 </style>
 </head>
 <body>
@@ -903,7 +913,6 @@ html.ready #sealLoad{opacity:0;pointer-events:none}
       <p class="fam-name">Oormila</p>
       <p class="fam-of">Daughter of Late Mr. P.S. Shibu &amp; Mrs. Deepa Shibu</p>
       <p class="fam-addr">Puthuparambil House,<br/>Kumarakom, Kottayam</p>
-      <p class="fam-sib"><span>Sister</span> Shakunthala</p>
       <p class="fam-tel"><span>Contact · Deepa</span><a href="tel:+919995496261">+91 99954 96261</a></p>
     </div>
   </div>
